@@ -1,0 +1,22 @@
+---
+jobs:
+  release:
+    name: release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - run: npm install -D @semantic-release/changelog@6.0.1 @semantic-release/git@10.0.1
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        name: Run automated package publishing
+        run: npx semantic-release@18
+name: release
+on:
+  push:
+    branches:
+      - master
