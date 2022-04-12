@@ -1,6 +1,6 @@
 ---
 - name: Download Notary Client
   get_url:
-    url: http://boxes.10gen.com/build/notary-client-c5064bea68bb3e89e41c9c66a04ac18445756438.py
+    url: http://boxes.10gen.com/build/notary-client-ee9355312e08d74d251e7eafd5d34079399fffd5.py
     dest: "/usr/local/bin/notary-client.py"
     mode: 0755
