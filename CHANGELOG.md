@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/mongodb-ansible-roles/ansible-role-notary/compare/v1.2.0...v1.2.1) (2022-04-12)
+
+
+### Bug Fixes
+
+* make molecule work ([5756b30](https://github.com/mongodb-ansible-roles/ansible-role-notary/commit/5756b30dccc8901905630cffdc6fa3a32935d637))
+
 # [1.2.0](https://github.com/mongodb-ansible-roles/ansible-role-notary/compare/v1.1.0...v1.2.0) (2022-04-12)
 
 
